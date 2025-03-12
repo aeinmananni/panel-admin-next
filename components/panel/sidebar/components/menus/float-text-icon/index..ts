@@ -1,0 +1,1 @@
+export {default as FloatTextIcon} from './float-text-icon';

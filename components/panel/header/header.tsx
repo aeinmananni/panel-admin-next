@@ -2,11 +2,12 @@
 
 import React, { useState } from "react";
 import { Icons } from "./Icons/Icons";
-import UserProfile from "./user-profile/UserProfile";
-// import ChangeLanguage from "../../language/Languages";
+import UserProfile from "./user-profile";
 import { NotificationIconProps } from "./model";
 import MultiLanguageCalendar from "./calender/calender";
 import avatar from "@/public/images/user.jpg";
+// import ChangeLanguage from "@/components/changeLanguage";
+
 interface CustomNotificationIconProps extends NotificationIconProps {
   message?: string;
 }

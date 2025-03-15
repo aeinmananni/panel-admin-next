@@ -26,4 +26,14 @@
     }
   
     
-  
+    .neon-button {
+      background-color: #fef08a; /* زرد ملایم‌تر */
+      color: #222; /* رنگ متن */
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 3px rgba(254, 240, 138, 0.7), 
+                  0 0 6px rgba(254, 240, 138, 0.5), 
+                  0 0 12px rgba(254, 240, 138, 0.3);
+    }

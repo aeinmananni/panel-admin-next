@@ -26,7 +26,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-hidden`}
+        className={` ${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-hidden`}
       >
         <Providers>
           <Dashbaord>{children}</Dashbaord>

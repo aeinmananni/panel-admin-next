@@ -17,13 +17,13 @@ export const groupingItem: GroupingType[] = [
     groupingId: 1,
     groupingName: "Number of Tickets Sold",
     classificationId: 1,
-    link: "Number-of-Tickets-Sold",
+    link: "Tickets-Sold",
   },
   {
     groupingId: 2,
     groupingName: "Daily/Monthly Revenue",
     classificationId: 1,
-    link: "Daily/Monthly-Revenue",
+    link: "Daily-Monthly-Revenue",
   },
   {
     groupingId: 3,
@@ -41,7 +41,7 @@ export const groupingItem: GroupingType[] = [
     groupingId: 5,
     groupingName: "Create/Edit Trips",
     classificationId: 2,
-    link: "Create/Edit-Trips",
+    link: "Create-Edit-Trips",
   },
   {
     groupingId: 6,
@@ -53,19 +53,19 @@ export const groupingItem: GroupingType[] = [
     groupingId: 7,
     groupingName: "DepartureTime&Capacity",
     classificationId: 2,
-    link: "DepartureTime&Capacity",
+    link: "DepartureTime-Capacity",
   },
   {
     groupingId: 8,
     groupingName: "SetTicketPrice",
     classificationId: 2,
-    link: "SetTicketPrice",
+    link: "Set-Ticket-Price",
   },
   {
     groupingId: 9,
     groupingName: "Create/Edit Drivers",
     classificationId: 3,
-    link: "Create/Edit-Drivers",
+    link: "Create-Edit-Drivers",
   },
   {
     groupingId: 10,
@@ -77,7 +77,7 @@ export const groupingItem: GroupingType[] = [
     groupingId: 11,
     groupingName: "DriverStatus",
     classificationId: 3,
-    link: "DriverStatus",
+    link: "Driver-Status",
   },
   {
     groupingId: 12,
@@ -95,14 +95,14 @@ export const groupingItem: GroupingType[] = [
     groupingId: 14,
     groupingName: "ReviewTicketReservation",
     classificationId: 5,
-    link: "ReviewTicketReservation",
+    link: "Review-Ticket-Reservation",
   },
 
   {
     groupingId: 15,
     groupingName: "BlockUser",
     classificationId: 5,
-    link: "BlockUser",
+    link: "Block-User",
   },
   {
     groupingId: 16,
@@ -114,13 +114,13 @@ export const groupingItem: GroupingType[] = [
     groupingId: 17,
     groupingName: "TicketStatus",
     classificationId: 4,
-    link: "TicketStatus",
+    link: "Ticket-Status",
   },
   {
     groupingId: 18,
     groupingName: "TicketRefund",
     classificationId: 4,
-    link: "TicketRefund",
+    link: "Ticket-Refund",
   },
   {
     groupingId: 19,
@@ -132,19 +132,19 @@ export const groupingItem: GroupingType[] = [
     groupingId: 20,
     groupingName: "TripsCompleted",
     classificationId: 6,
-    link: "TripsCompleted",
+    link: "Trips-Completed",
   },
   {
     groupingId: 21,
-    groupingName: "PaymentMethods",
+    groupingName: "Payment-Methods",
     classificationId: 7,
-    link: "PaymentMethods",
+    link: "Payment-Methods",
   },
   {
     groupingId: 22,
     groupingName: "CommissionPercentage",
     classificationId: 7,
-    link: "CommissionPercentage",
+    link: "Commission-Percentage",
   },
   {
     groupingId: 23,

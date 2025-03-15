@@ -1,7 +1,6 @@
 "use client";
-
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { Circle } from "../../../icons/icon";
 import { FloatTextIcon } from "../float-text-icon/index.";
 
@@ -11,23 +10,19 @@ type GroupingItemProps = {
 };
 
 export default function GroupingItem({ title, to }: GroupingItemProps) {
-  const [currentPath, setCurrentPath] = useState<string | null>(null);
+  const pathname = usePathname();
+  const isActive = pathname.replace("/", "") === to;
 
-  useEffect(() => {
-    setCurrentPath(window.location.pathname);
-  }, []);
-
-  const checkRoutes = currentPath?.replace("/", "") === to;
-
+  console.log(pathname);
   return (
     <Link
       href={to ?? "/"}
-      className={`p-2 group ${checkRoutes ? "bg-yellow-500" : ""} `}
+      className={`p-2 group rounded-md ${isActive ? "neon-button" : ""} `}
     >
       <FloatTextIcon
         title={title}
         icon={<Circle size={12} />}
-        styles={{ parentClassName: `${checkRoutes ? "!text-slate-100" : ""}` }}
+        styles={{ parentClassName: `${isActive ? "!text-slate-600" : ""}` }}
       />
     </Link>
   );

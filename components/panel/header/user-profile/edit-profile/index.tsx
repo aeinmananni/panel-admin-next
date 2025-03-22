@@ -146,7 +146,8 @@ const EditProfile = () => {
                   <div className="mt-4 flex gap-2 justify-end">
                     <button
                       type="submit"
-                      className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 cursor-pointer text-white rounded-md"
+                      onClick={toggleModal}
+                      className="px-4 py-2 bg-red-700 hover:bg-red-800 cursor-pointer text-white rounded-md"
                     >
                       انصراف
                     </button>

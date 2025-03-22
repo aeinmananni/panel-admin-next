@@ -46,7 +46,7 @@ const EditProfile = () => {
               <h3 className="text-lg font-semibold">ویرایش پروفایل</h3>
               <button
                 onClick={toggleModal}
-                className="text-gray-500 hover:text-gray-700"
+                className="text-gray-500  hover:text-red-700"
               >
                 <IoMdClose size={24} />
               </button>

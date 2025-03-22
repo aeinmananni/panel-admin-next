@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import { Icons } from "./Icons/Icons";
 import UserProfile from "./user-profile";
 import { NotificationIconProps } from "./model";
-import MultiLanguageCalendar from "./calender/calender";
+// import MultiLanguageCalendar from "./calender/calender";
 import avatar from "@/public/images/user.jpg";
+import DatePickerComponent from "./calender/calender";
 // import ChangeLanguage from "@/components/changeLanguage";
 
 interface CustomNotificationIconProps extends NotificationIconProps {
@@ -80,7 +81,9 @@ const Header: React.FC = () => {
           />
           {isCalendarOpen && (
             <div className="absolute right-0 mt-2 bg-white shadow-md rounded-md p-2 z-10">
-              <MultiLanguageCalendar />
+              {/* <MultiLanguageCalendar />
+               */}
+              <DatePickerComponent />
             </div>
           )}
         </div>

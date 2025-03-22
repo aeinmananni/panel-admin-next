@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { BiSolidEdit } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
@@ -13,6 +12,7 @@ const validationSchema = Yup.object({
     .matches(/^[0-9]+$/, "شماره تماس معتبر نیست")
     .min(10, "شماره تماس باید حداقل 10 رقم باشد"),
   address: Yup.string().required("آدرس الزامی است"),
+  profileImage: Yup.mixed().required("تصویر پروفایل الزامی است"),
 });
 
 const EditProfile = () => {
@@ -57,11 +57,12 @@ const EditProfile = () => {
                 lastName: "",
                 phone: "",
                 address: "",
+                profileImage: null,
               }}
               validationSchema={validationSchema}
               onSubmit={() => {}}
             >
-              {({ errors, touched }) => (
+              {({ errors, touched, setFieldValue }) => (
                 <Form className="space-y-4">
                   <div>
                     <label
@@ -143,9 +144,35 @@ const EditProfile = () => {
                     )}
                   </div>
 
+                  <div>
+                    <label
+                      htmlFor="profileImage"
+                      className="block text-sm text-gray-700"
+                    >
+                      تغییر عکس پروفایل
+                    </label>
+                    <input
+                      type="file"
+                      id="profileImage"
+                      name="profileImage"
+                      onChange={(event) => {
+                        setFieldValue(
+                          "profileImage",
+                          event.currentTarget.files[0]
+                        );
+                      }}
+                      className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"
+                    />
+                    {errors.profileImage && touched.profileImage && (
+                      <div className="text-red-500 text-xs mt-1">
+                        {errors.profileImage}
+                      </div>
+                    )}
+                  </div>
+
                   <div className="mt-4 flex gap-2 justify-end">
                     <button
-                      type="submit"
+                      type="button"
                       onClick={toggleModal}
                       className="px-4 py-2 bg-red-700 hover:bg-red-800 cursor-pointer text-white rounded-md"
                     >

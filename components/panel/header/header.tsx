@@ -4,10 +4,9 @@ import React, { useState } from "react";
 import { Icons } from "./Icons/Icons";
 import UserProfile from "./user-profile";
 import { NotificationIconProps } from "./model";
-// import MultiLanguageCalendar from "./calender/calender";
 import avatar from "@/public/images/user.jpg";
 import DatePickerComponent from "./calender/calender";
-// import ChangeLanguage from "@/components/changeLanguage";
+import ChangeLanguage from "@/components/language/Languages";
 
 interface CustomNotificationIconProps extends NotificationIconProps {
   message?: string;
@@ -50,15 +49,13 @@ const Header: React.FC = () => {
       <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
         <div className="flex items-center gap-2 text-gray-700 sm:font-semibold">
           <UserProfile role="admin" avatar={avatar.src} name="John Doe" />
-          {/* <ChangeLanguage /> */}
+
+          <ChangeLanguage />
           <input
             type="text"
             placeholder=". . . Search"
             className="px-2 py-1 border rounded-xl border-gray-300 text-left"
           />
-        </div>
-        <div className="flex items-center gap-4 relative">
-          {/* <NotificationIcon Icon={Icons.Bell} count={5} color="red-500" /> */}
         </div>
       </div>
       <div className="flex items-center gap-4 text-gray-600 relative mt-4 md:mt-0">
@@ -81,14 +78,10 @@ const Header: React.FC = () => {
           />
           {isCalendarOpen && (
             <div className="absolute right-0 mt-2 bg-white shadow-md rounded-md p-2 z-10">
-              {/* <MultiLanguageCalendar />
-               */}
               <DatePickerComponent />
             </div>
           )}
         </div>
-        {/* <MultiDatePickerComponent w-5 h-5 cursor-pointer /> */}
-        {/* <Icons.Star className="w-5 h-5 text-yellow-500 cursor-pointer" /> */}
       </div>
     </header>
   );

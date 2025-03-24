@@ -1,11 +1,5 @@
-export default function Login() {
-    
-    return(
-        <div>
-             aLOOOO
-        </div>
-    )
+import React from "react";
 
+export default function Login(): React.ReactElement {
+  return <div>dddddddddddddddd</div>;
 }
-
-

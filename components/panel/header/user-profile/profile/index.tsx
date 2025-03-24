@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
 
-const Profile = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
+export default function Profile() {
+  
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
@@ -88,4 +89,3 @@ const Profile = () => {
   );
 };
 
-export default Profile;

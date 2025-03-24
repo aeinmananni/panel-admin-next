@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Icons } from "./Icons/Icons";
 import UserProfile from "./user-profile";
 import { NotificationIconProps } from "./model";
 import avatar from "@/public/images/user.jpg";
 import DatePickerComponent from "./calender/calender";
 import ChangeLanguage from "@/components/language/Languages";
+import DarkMode from "@/components/darkmode";
 
 interface CustomNotificationIconProps extends NotificationIconProps {
   message?: string;
@@ -41,25 +42,25 @@ const NotificationIcon: React.FC<CustomNotificationIconProps> = ({
   );
 };
 
-const Header: React.FC = () => {
+export default function Header() {
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   return (
-    <header className="flex flex-col md:flex-row items-center justify-between px-6 py-3 bg-white shadow-sm h-full">
-      <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
-        <div className="flex items-center gap-2 text-gray-700 sm:font-semibold">
+    <header className="flex flex-col md:flex-row items-center justify-between px-6 py-3  bg-white shadow-sm h-full dark:bg-gray-900">
+      <div className="flex flex-col md:flex-row items-center gap-4  w-full md:w-auto">
+        <div className="flex items-center gap-2 text-gray-700 sm:font-semibold dark:text-white">
           <UserProfile role="admin" avatar={avatar.src} name="John Doe" />
-
           <ChangeLanguage />
           <input
             type="text"
             placeholder=". . . Search"
-            className="px-2 py-1 border rounded-xl border-gray-300 text-left"
+            className="px-2 py-1 border rounded-xl border-gray-300 text-left dark:bg-gray-700 dark:border-gray-600 dark:text-white"
           />
         </div>
       </div>
       <div className="flex items-center gap-4 text-gray-600 relative mt-4 md:mt-0">
-        <span className="cursor-pointer">🌙</span>
+        <DarkMode />
+
         <NotificationIcon
           Icon={Icons.ShoppingCart}
           count={0}
@@ -85,6 +86,4 @@ const Header: React.FC = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}

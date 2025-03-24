@@ -15,9 +15,9 @@ const validationSchema = Yup.object({
   profileImage: Yup.mixed().required("تصویر پروفایل الزامی است"),
 });
 
-const EditProfile = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export default function EditProfile () {
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
@@ -194,5 +194,3 @@ const EditProfile = () => {
     </>
   );
 };
-
-export default EditProfile;

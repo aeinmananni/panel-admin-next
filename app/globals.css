@@ -41,10 +41,21 @@
 
   .rmdp-container {
   direction: rtl;
-  font-family: "Vazir", sans-serif; /* یا هر فونت فارسی دیگر */
+  font-family: "Vazir", sans-serif;
 }
 
 .rmdp-day.rmdp-selected span {
   background-color: #007bff;
   color: white;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
 }

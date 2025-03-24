@@ -1,8 +1,8 @@
 import React from 'react'
 import { RiLogoutCircleRLine } from 'react-icons/ri';
 
-const Exit = () => {
-  return (
+export default function Exit() {
+      return (
     <div className="flex justify-between cursor-pointer">
       <a href="#" className="block px-4 py-2 text-sm text-gray-700">
         خروج
@@ -12,7 +12,6 @@ const Exit = () => {
   );
 }
 
-export default Exit
 
 
 

@@ -4,27 +4,26 @@ import {
   ChevronDown,
   HomeIcon,
   LayoutDashboard,
-  Users,
-  Package,
-  ShoppingCart,
-  FileText,
-  MessageSquare,
-  BarChart3,
   Settings,
-  KeyRound,
   Circle,
+  Menu,
+  Map,
+  Users,
+  Ticket,
+  UserCog,
+  BarChart,
+  Shield,
 } from "lucide-react";
 
 const IconsMap: { [key: number]: React.ReactNode } = {
   1: <LayoutDashboard size={20} />,
-  2: <Users size={20} />,
-  3: <Package size={20} />,
-  4: <ShoppingCart size={20} />,
-  5: <FileText size={20} />,
-  6: <MessageSquare size={20} />,
-  7: <BarChart3 size={20} />,
-  8: <Settings size={20} />,
-  9: <KeyRound size={20} />,
+  2: <Map size={20} />,
+  3: <Users size={20} />,
+  4: <Ticket size={20} />,
+  5: <UserCog size={20} />,
+  6: <BarChart size={20} />,
+  7: <Settings size={20} />,
+  8: <Shield size={20} />,
 };
 
-export { Pin, BookOpenCheck, ChevronDown, HomeIcon, IconsMap, Circle };
+export { Pin, BookOpenCheck, ChevronDown, HomeIcon, IconsMap, Circle, Menu };

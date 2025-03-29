@@ -5,6 +5,7 @@ import Button from "../../../../../../custom/button";
 import { FloatTextIcon } from "../float-text-icon/index.";
 import useToggleHeight from "@/hooks/useToggleHeight";
 import { useTranslation } from "next-i18next";
+import { usePanelAdminStore } from "@/store";
 
 // import { usePanelAdminStore } from "../../../../../../store";
 type ItemProps = {
@@ -23,7 +24,7 @@ export default function ClassificationItem({
   const { i18n } = useTranslation();
   const [open, setOpen] = useState<boolean>(isOpen);
   const containerDivRef = useRef<HTMLDivElement | null>(null);
-
+  const showMenu = usePanelAdminStore((s) => s.showMenu);
   useEffect(() => {
     setOpen(isOpen);
   }, [isOpen]);
@@ -33,11 +34,11 @@ export default function ClassificationItem({
       <Button
         type="button"
         onClick={() => setOpen((c) => !c)}
-        className={`${
-          children && open ? "bg-slate-100" : ""
-        } MenuItemsStyle group`}
+        className={`${children && open ? "bg-slate-100" : ""} MenuItemsStyle ${
+          showMenu && "group"
+        } `}
       >
-        {children && (
+        {children && showMenu && (
           <ChevronDown
             size={16}
             className={`${
@@ -54,7 +55,9 @@ export default function ClassificationItem({
       {children && (
         <div
           ref={containerDivRef}
-          className={`flex flex-col rounded-md items-end px-2  overflow-hidden transition-all duration-300 `}
+          className={`flex flex-col rounded-md items-end ${
+            showMenu ? "px-2" : "px-0"
+          }   overflow-hidden transition-all duration-300 `}
         >
           {children}
         </div>

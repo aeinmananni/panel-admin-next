@@ -5,6 +5,8 @@ type StoreType = {
   setCurrentColor: (v: string) => void;
   isScroll: boolean;
   setIsScroll: (v: boolean) => void;
+  showMenu: boolean;
+  setShowMenu: (v: boolean | ((v: boolean) => boolean)) => void;
 };
 
 export const usePanelAdminStore = create<StoreType>()((set) => ({
@@ -13,6 +15,12 @@ export const usePanelAdminStore = create<StoreType>()((set) => ({
       ? localStorage.getItem("currentColor") || "#7367f0"
       : "#7367f0",
   isScroll: false,
+  showMenu: true,
+  setShowMenu: (v: boolean | ((v: boolean) => boolean)) => {
+    set((state) => ({
+      showMenu: typeof v === "function" ? v(state.showMenu) : v,
+    }));
+  },
   setCurrentColor: (value: string) => {
     set(() => ({ currentColor: value }));
     if (typeof window !== "undefined") {

@@ -8,7 +8,7 @@ i18next
   .use(HttpBackend)
   .use(LanguageDetector)
   .init({
-    fallbackLng: "en",
+    fallbackLng: "fa",
     supportedLngs: ["en", "fa", "ar"],
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",

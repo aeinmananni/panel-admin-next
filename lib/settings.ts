@@ -1,6 +1,6 @@
 export const getOptions = (lng: string = "en", ns: string = "common") => ({
     supportedLngs: ["en", "fa", "ar"], 
-    fallbackLng: "en",
+    fallbackLng: "fa",
     lng,
     ns,
     defaultNS: "common",

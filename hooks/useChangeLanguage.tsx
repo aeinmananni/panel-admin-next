@@ -16,7 +16,13 @@ export const useChangeLanguage = () => {
   };
 
   useEffect(() => {
-    const currentLang = i18n.language || "fa";
+    let currentLang = i18n.language || "fa"; // مقدار پیش‌فرض "fa"
+
+    if (!["en", "fa", "ar"].includes(currentLang)) {
+      currentLang = "fa"; // اگر مقدار نامعتبر بود، "fa" تنظیم شود
+      i18n.changeLanguage(currentLang);
+    }
+
     document.documentElement.setAttribute(
       "dir",
       currentLang === "fa" || currentLang === "ar" ? "ltr" : "rtl"

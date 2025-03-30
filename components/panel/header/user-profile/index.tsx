@@ -2,11 +2,11 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { UserProfileProps } from "../model";
-import { RiLogoutCircleRLine } from "react-icons/ri";
 import Image from "next/image";
 import Setting from "./setting";
 import Profile from "./profile";
 import EditProfile from "./edit-profile";
+import Exit from "./exit/exit";
 
 
 
@@ -60,12 +60,7 @@ const UserProfile: React.FC<UserProfileProps> = ({ role, avatar, name }) => {
 
           <Setting />
          
-          <div className="flex justify-between cursor-pointer">
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700">
-              خروج
-            </a>
-            <RiLogoutCircleRLine className="mx-2 mt-2 cursor-pointer" />
-          </div>
+         <Exit />
         </div>
       )}
     </div>

@@ -17,15 +17,15 @@ const FloatTextIcon = ({ title, icon, styles }: FloatTextIconProps) => {
   const { delayedShowMenu } = useDelayedShowMenu(showMenu);
   return (
     <div
-      className={`flex items-center  ${
-        showMenu ? "justify-end" : "justify-center"
+      className={`flex items-center   ${
+        showMenu ? "justify-end" : "justify-end md:justify-center"
       }  gap-2 text-slate-600  ${
         i18n.language === "en"
           ? showMenu && "group-hover:translate-x-1"
           : showMenu && "group-hover:-translate-x-1"
       }  duration-300  w-full ${styles?.parentClassName}`}
     >
-      <span className={`truncate ${delayedShowMenu ? "flex" : "hidden"}`}>
+      <span className={`truncate ${delayedShowMenu ? "flex" : "md:hidden"}`}>
         {t(title)}
       </span>
       {icon}

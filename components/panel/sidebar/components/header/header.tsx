@@ -14,8 +14,8 @@ export default function Header() {
       style={{
         boxShadow: isScroll ? `0px 19px 20px  white` : "0px 2px 2px  white",
       }}
-      className={`flex p-2 overflow-hidden z-20 h-24 items-center border ${
-        showMenu ? "justify-between" : "justify-center"
+      className={`flex p-2 overflow-hidden z-20 h-24 items-center  ${
+        showMenu ? "justify-between" : "justify-between md:justify-center"
       }  transition-all duration-300  w-full`}
     >
       <Menu
@@ -23,11 +23,11 @@ export default function Header() {
         size={25}
         color={currentColor}
         cursor={"pointer"}
-        className={`${isScroll && !showMenu ? "mr-4" : "mr-0"}`}
+        // className={`${isScroll && !showMenu ? "mr-4" : "mr-0"}`}
       />
       <div
         className={` transition-all duration-300 ${
-          delayedShowMenu ? "flex" : "hidden"
+          delayedShowMenu ? "flex" : "flex md:hidden"
         }  items-center gap-2`}
       >
         <span style={{ color: currentColor }} className="text-lg font-semibold">

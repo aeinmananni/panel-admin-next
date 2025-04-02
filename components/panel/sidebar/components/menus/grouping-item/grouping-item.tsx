@@ -13,11 +13,12 @@ export default function GroupingItem({ title, to }: GroupingItemProps) {
   const pathname = usePathname();
   const isActive = pathname.replace("/", "") === to;
 
-  console.log(pathname);
   return (
     <Link
       href={to ?? "/"}
-      className={`p-2 group rounded-md ${isActive ? "neon-button" : ""} `}
+      className={`p-2  w-full h-10 flex justify-center items-center group rounded-sm ${
+        isActive ? "neon-button" : ""
+      } `}
     >
       <FloatTextIcon
         title={title}

@@ -34,11 +34,11 @@ export default function ClassificationItem({
       <Button
         type="button"
         onClick={() => setOpen((c) => !c)}
-        className={`${children && open ? "bg-slate-100" : ""} MenuItemsStyle ${
+        className={`${children && open ? "bg-slate-100" : ""} MenuItemsStyle  ${
           showMenu && "group"
         } `}
       >
-        {children && showMenu && (
+        {children && (
           <ChevronDown
             size={16}
             className={`${
@@ -47,7 +47,9 @@ export default function ClassificationItem({
                 : i18n.language === "en"
                 ? "-rotate-90"
                 : "rotate-90"
-            } transition-all duration-300 text-slate-600`}
+            } transition-all duration-300 text-slate-600 ${
+              showMenu ? "flex" : "md:hidden"
+            }`}
           />
         )}
         <FloatTextIcon title={title} icon={icon} />

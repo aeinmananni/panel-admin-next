@@ -1,10 +1,11 @@
-// app/page.tsx
-import Languages from "@/components/language/Languages";
+"use client";
+import { usePathname, useRouter } from "next/navigation";
+export default function Home() {
+  const pathname = usePathname();
+  const router = useRouter();
+  if (pathname === "/") {
+    router.push("/dashboard/Tickets-Sold");
+  }
 
-export default async function Page() {
-  return (
-    <div>
-      <Languages />
-    </div>
-  );
+  return null;
 }

@@ -11,7 +11,7 @@ type GroupingItemProps = {
 
 export default function GroupingItem({ title, to }: GroupingItemProps) {
   const pathname = usePathname();
-  const isActive = pathname.replace("/", "") === to;
+  const isActive = pathname === to;
 
   return (
     <Link

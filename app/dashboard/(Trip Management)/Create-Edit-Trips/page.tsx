@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 
-// کامپوننت فرم سفر (قبلاً ساختیمش)
 const TripForm = ({ initialData = null, onSubmit }) => {
   const [formData, setFormData] = useState(
     initialData || {
@@ -94,11 +93,9 @@ const TripForm = ({ initialData = null, onSubmit }) => {
   );
 };
 
-// تب اصلی
 const TripTabs = () => {
   const [activeTab, setActiveTab] = useState<"create" | "edit">("create");
 
-  // اطلاعات فرضی برای ویرایش
   const tripToEdit = {
     origin: "تهران",
     destination: "شیراز",

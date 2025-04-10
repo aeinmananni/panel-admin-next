@@ -71,7 +71,6 @@ const DriverForm = ({ initialData = null, onSubmit }) => {
   );
 };
 
-// کامپوننت تب برای افزودن و ویرایش رانندگان
 const DriverTabs = () => {
   const [activeTab, setActiveTab] = useState<"add" | "edit">("add");
 
@@ -83,7 +82,7 @@ const DriverTabs = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-lg w-full max-w-md mx-auto mt-8">
+    <div className=" w-[800px] p-6 rounded-2xl shadow-lg  max-w-md mx-auto mt-8">
       <div className="flex justify-center gap-4 mb-6">
         <button
           className={`px-4 py-2 font-bold rounded-full transition ${

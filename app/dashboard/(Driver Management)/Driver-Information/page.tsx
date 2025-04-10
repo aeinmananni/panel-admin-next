@@ -116,6 +116,13 @@ const DriverInformationPage = () => {
       rating: 4.7,
       availability: true,
     },
+  //   {
+  //     name: " علی اکبری ",
+  //     phoneNumber: " 09111152065",
+  //     licenseNumber: " "258684136"
+
+
+  //  }
   ];
 
   const mohammad = sampleDrivers.find(driver => driver.name === "محمد باقری");

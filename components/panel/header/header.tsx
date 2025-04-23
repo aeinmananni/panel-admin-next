@@ -12,7 +12,7 @@ import DarkMode from "@/components/darkmode";
 interface CustomNotificationIconProps extends NotificationIconProps {
   message?: string;
 }
-
+    
 const NotificationIcon: React.FC<CustomNotificationIconProps> = ({
   Icon,
   count,

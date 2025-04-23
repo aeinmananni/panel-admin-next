@@ -1,0 +1,82 @@
+export const mockTickets = [
+    {
+        id: 1,
+        passengerName: "علی محمدی",
+        phone: "09121234567",
+        origin: "تهران",
+        destination: "کرج",
+        time: "09:30",
+        capacity: 2,
+        status: "انجام شده",
+    },
+    {
+        id: 2,
+        passengerName: "سارا رحیمی",
+        phone: "09121231234",
+        origin: "قم",
+        destination: "تهران",
+        time: "14:00",
+        capacity: 1,
+        status: "پیش‌رو",
+    },
+    {
+        id: 3,
+        passengerName: "رضا ناصری",
+        phone: "09351234567",
+        origin: "اصفهان",
+        destination: "شیراز",
+        time: "17:45",
+        capacity: 3,
+        status: "لغو شده",
+    },
+    {
+        id: 4,
+        passengerName: "علی اکبری",
+        phone: "09351234567",
+        origin: "بابل",
+        destination: "ساری",
+        time: "17:45",
+        capacity: 5,
+        status: "لغو شده",
+    },
+    {
+        id: 5,
+        passengerName: "حسن اکبری",
+        phone: "09351234567",
+        origin: "بابل",
+        destination: "ساری",
+        time: "17:00",
+        capacity: 15,
+        status: "پیش‌رو"
+    },
+    {
+        id: 6,
+        passengerName: "علی قلی ",
+        phone: "09351234567",
+        origin: "بابل",
+        destination: "ساری",
+        time: "12:00",
+        capacity: 15,
+        status: "انجام شده"
+    },
+    {
+        id: 7,
+        passengerName: "علی قلی ",
+        phone: "09351234567",
+        origin: "بابل",
+        destination: "ساری",
+        time: "12:00",
+        capacity: 15,
+        status: "انجام شده"
+    },
+    {
+        id: 8,
+        passengerName: "علی قلی ",
+        phone: "09351234567",
+        origin: "بابل",
+        destination: "ساری",
+        time: "12:00",
+        capacity: 25,
+        status: "انجام شده"
+    }
+];

@@ -69,7 +69,7 @@ export const groupingItem: GroupingType[] = [
   },
   {
     groupingId: 10,
-    groupingName: "Driver-Information",
+    groupingName: "Driver Information",
     classificationId: 3,
     link: "/dashboard/Driver-Information",
   },

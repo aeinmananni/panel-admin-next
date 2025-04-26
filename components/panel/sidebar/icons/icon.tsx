@@ -13,9 +13,16 @@ import {
   UserCog,
   BarChart,
   Shield,
+  Search,
+  Undo2,
+  User,
+  History,
+  Headset,
 } from "lucide-react";
 
-const IconsMap: { [key: number]: React.ReactNode } = {
+type IconType = { [key: number]: React.ReactNode };
+
+const ICON_ADMINS: IconType = {
   1: <LayoutDashboard size={20} />,
   2: <Map size={20} />,
   3: <Users size={20} />,
@@ -26,4 +33,23 @@ const IconsMap: { [key: number]: React.ReactNode } = {
   8: <Shield size={20} />,
 };
 
-export { Pin, BookOpenCheck, ChevronDown, HomeIcon, IconsMap, Circle, Menu };
+const ICON_USERS: IconType = {
+  1: <LayoutDashboard size={20} />,
+  2: <Search />,
+  3: <Ticket />,
+  4: <Undo2 />,
+  5: <User />,
+  6: <History />,
+  7: <Headset />,
+};
+
+export {
+  Pin,
+  BookOpenCheck,
+  ChevronDown,
+  HomeIcon,
+  ICON_ADMINS,
+  Circle,
+  Menu,
+  ICON_USERS,
+};

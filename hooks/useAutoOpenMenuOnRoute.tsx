@@ -1,7 +1,7 @@
 "use client";
 import {
-  classificationItem,
-  groupingItem,
+  CLASSIFICATION_ADMIN_ITEMS,
+  GROUPING_ADMIN_ITEMS,
 } from "@/components/panel/sidebar/data";
 import { useEffect, useState } from "react";
 
@@ -9,9 +9,9 @@ export const useAutoOpenMenuOnRoute = () => {
   const [openItems, setOpenItems] = useState<boolean[]>([]);
   const location = window.location.pathname;
   useEffect(() => {
-    const openIndexes: boolean[] = classificationItem.map(
+    const openIndexes: boolean[] = CLASSIFICATION_ADMIN_ITEMS.map(
       (cl: { classificationId: number }) => {
-        return groupingItem.some(
+        return GROUPING_ADMIN_ITEMS.some(
           (gr) =>
             location.includes(String(gr.link)) &&
             gr.classificationId === cl.classificationId

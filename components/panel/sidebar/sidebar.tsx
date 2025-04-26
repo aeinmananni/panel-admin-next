@@ -2,8 +2,14 @@
 import { usePanelAdminStore } from "@/store";
 import { Menus, Header } from "./components";
 import { useChangeLanguage } from "@/hooks/useChangeLanguage";
-
+import {
+  GROUPING_ADMIN_ITEMS,
+  CLASSIFICATION_ADMIN_ITEMS,
+  CLASSIFICATION_USER_ITEMS,
+  GROUPING_USER_ITEMS,
+} from "./data";
 export default function Sidebar() {
+  const loginStatus = process.env.NEXT_PUBLIC_ROLS;
   const showMenu = usePanelAdminStore((s) => s.showMenu);
   const { i18n } = useChangeLanguage();
   return (
@@ -19,7 +25,16 @@ export default function Sidebar() {
       }  h-full  flex flex-col bg-white  gap-1 justify-end items-end`}
     >
       <Header />
-      <Menus />
+      <Menus
+        classificationItems={
+          loginStatus === "admin"
+            ? CLASSIFICATION_ADMIN_ITEMS
+            : CLASSIFICATION_USER_ITEMS
+        }
+        groupingItems={
+          loginStatus === "admin" ? GROUPING_ADMIN_ITEMS : GROUPING_USER_ITEMS
+        }
+      />
     </div>
   );
 }

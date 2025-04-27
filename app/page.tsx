@@ -4,7 +4,11 @@ export default function Home() {
   const pathname = usePathname();
   const router = useRouter();
   if (pathname === "/") {
-    router.push("/dashboard/Tickets-Sold");
+    router.push(
+      process.env.NEXT_PUBLIC_ROLS === "admin"
+        ? "/dashboard/Tickets-Sold"
+        : "/user-dashboard/active-or-pending-tickets"
+    );
   }
 
   return null;

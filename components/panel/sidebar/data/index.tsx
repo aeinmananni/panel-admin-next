@@ -182,13 +182,13 @@ export const GROUPING_USER_ITEMS: GroupingType[] = [
     groupingId: 1,
     groupingName: "Overview of upcoming trips",
     classificationId: 1,
-    link: "/user-dashboard/Overview-of-upcoming-trips",
+    link: "/user-dashboard/overview-of-upcoming-trips",
   },
   {
     groupingId: 2,
     groupingName: "Active or pending tickets",
     classificationId: 1,
-    link: "/user-dashboard/Active-or-pending-tickets",
+    link: "/user-dashboard/active-or-pending-tickets",
   },
   {
     groupingId: 3,
@@ -200,7 +200,7 @@ export const GROUPING_USER_ITEMS: GroupingType[] = [
     groupingId: 3,
     groupingName: "Filter",
     classificationId: 2,
-    link: "/user-dashboard/ُfilter",
+    link: "/user-dashboard/filter",
   },
   {
     groupingId: 4,
@@ -218,7 +218,7 @@ export const GROUPING_USER_ITEMS: GroupingType[] = [
     groupingId: 6,
     groupingName: "Ticket status (booked, cancelled, used)",
     classificationId: 3,
-    link: "/user-dashboard/Ticket-status",
+    link: "/user-dashboard/ticket-status",
   },
   {
     groupingId: 7,

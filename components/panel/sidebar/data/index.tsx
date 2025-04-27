@@ -216,7 +216,7 @@ export const GROUPING_USER_ITEMS: GroupingType[] = [
   },
   {
     groupingId: 6,
-    groupingName: "Ticket status (booked, cancelled, used)",
+    groupingName: "Ticket status",
     classificationId: 3,
     link: "/user-dashboard/ticket-status",
   },

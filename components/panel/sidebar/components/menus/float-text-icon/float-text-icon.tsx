@@ -9,9 +9,10 @@ type FloatTextIconProps = {
   title: string;
   icon: React.ReactNode;
   styles?: Styles;
+  rols?: "classification" | "groupingItem";
 };
 
-const FloatTextIcon = ({ title, icon, styles }: FloatTextIconProps) => {
+const FloatTextIcon = ({ title, icon, styles, rols }: FloatTextIconProps) => {
   const { t, i18n } = useChangeLanguage();
   const showMenu = usePanelAdminStore((s) => s.showMenu);
   const { delayedShowMenu } = useDelayedShowMenu(showMenu);
@@ -25,7 +26,11 @@ const FloatTextIcon = ({ title, icon, styles }: FloatTextIconProps) => {
           : showMenu && "group-hover:-translate-x-1"
       }  duration-300  w-full ${styles?.parentClassName}`}
     >
-      <span className={`truncate ${delayedShowMenu ? "flex" : "md:hidden"}`}>
+      <span
+        className={`truncate ${delayedShowMenu ? "flex" : "md:hidden"} ${
+          rols === "classification" ? "text-[17px]" : "text-[15px]"
+        }`}
+      >
         {t(title)}
       </span>
       {icon}

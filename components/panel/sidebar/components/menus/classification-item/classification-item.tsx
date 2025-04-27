@@ -52,7 +52,7 @@ export default function ClassificationItem({
             }`}
           />
         )}
-        <FloatTextIcon title={title} icon={icon} />
+        <FloatTextIcon title={title} icon={icon} rols="classification" />
       </Button>
       {children && (
         <div

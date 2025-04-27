@@ -24,6 +24,7 @@ export default function GroupingItem({ title, to }: GroupingItemProps) {
         title={title}
         icon={<Circle size={12} />}
         styles={{ parentClassName: `${isActive ? "!text-slate-600" : ""}` }}
+        rols="groupingItem"
       />
     </Link>
   );

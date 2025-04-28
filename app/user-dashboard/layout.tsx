@@ -6,7 +6,9 @@ export default function DashboardLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <AuthGuard>
-      <Dashbaord>{children}</Dashbaord>
+      <div className="flex flex-col h-full w-full">
+        <Dashbaord>{children}</Dashbaord>
+      </div>
     </AuthGuard>
   );
 }

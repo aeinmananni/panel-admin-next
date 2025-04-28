@@ -1,7 +1,5 @@
+import { OverviewOfUpcomingTrips } from "@/components/user-dashboard-components";
+
 export default function OverviewOfUpcomingTripsPage() {
-  return (
-    <div>
-      <h1>Overview-of-upcoming-trips</h1>
-    </div>
-  );
+  return <OverviewOfUpcomingTrips />;
 }

@@ -61,3 +61,13 @@ body {
   color: #000000;
   transition: background-color 0.3s, color 0.3s;
 }
+
+
+@layer utilities {
+  .text-shadow-yellow {
+    text-shadow: 0 0 4px #eda62b,0 0 3px #ffc869;
+  }
+  .text-shadow-gray {
+    text-shadow: 0 3px 4px #9b8b71;
+  }
+}

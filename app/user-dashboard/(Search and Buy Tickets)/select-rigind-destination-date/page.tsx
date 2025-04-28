@@ -1,7 +1,5 @@
-export default function SelectRigindDestinationDate() {
-  return (
-    <div>
-      <h1>SelectRigindDestinationDate</h1>
-    </div>
-  );
+import { SelectRigindDestinationDate } from "@/components/user-dashboard-components";
+
+export default function SelectRigindDestinationDatePage() {
+  return <SelectRigindDestinationDate />;
 }

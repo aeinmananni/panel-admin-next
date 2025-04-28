@@ -1,29 +1,11 @@
 "use client";
-import { useChangeColor } from "@/hooks/useChangeColor";
+import { getChangeColor } from "@/hooks/useChangeColor";
 import tiketIcon from "@/public/icons/ticket.png";
 import Image from "next/image";
-type TripCartProps = {
-  id?: number;
-  origin: string;
-  destination: string;
-  departureDate: string;
-  departureTime: string;
-  status: "تایید شده" | "در انتظار تایید" | "لغو شده";
-  ticketNumber?: string;
-  seatCount: number;
-};
+import { TripCartProps, column } from "../../../models";
 
-const column: Record<keyof Omit<TripCartProps, "id">, string> = {
-  origin: "مبدا",
-  destination: "مقصد",
-  departureDate: "تاریخ",
-  departureTime: "ساعت",
-  status: "وضعیت",
-  ticketNumber: "شماره تیکت",
-  seatCount: "تعداد صندلی",
-};
 export default function TripCart({ ...props }: TripCartProps) {
-  const changeColor = useChangeColor(props.status);
+  const changeColor = getChangeColor(props.status);
   return (
     <div className="w-full border border-slate-500  rounded-md shadow-lg shadow-yellow-500 flex  p-1 relative justify-between">
       <div className="flex flex-col  gap-1 h-full  relative">

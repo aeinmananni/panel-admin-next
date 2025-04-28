@@ -55,5 +55,6 @@
   "Chat or support ticket system": "نظام الدردشة أو تذاكر الدعم",
   "Frequently Asked Questions": "الأسئلة الشائعة",
   "Change password": "تغيير كلمة المرور",
-  "subtext":"هنا يمكنك مشاهدة رحلاتك القادمة."
+  "subtext": "هنا يمكنك مشاهدة رحلاتك القادمة.",
+  "ActiveOrPendingTicketsSubText": "في هذا القسم يمكنك مشاهدة التذاكر التي تم شراؤها أو التي قيد الانتظار."
 }

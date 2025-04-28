@@ -55,5 +55,6 @@
   "Rate the driver or trip experience": "Rate the driver or trip experience",
   "Chat or support ticket system": "Chat or support ticket system",
   "Frequently Asked Questions": "Frequently Asked Questions",
-  "subtext":"Here you can view your upcoming trips."
+  "subtext": "Here you can view your upcoming trips.",
+  "ActiveOrPendingTicketsSubText": "In this section, you can view the tickets that have been purchased or are pending."
 }

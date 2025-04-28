@@ -35,7 +35,7 @@
       border-radius: 4px;
       text-align: center;
       transition: all 0.3s ease-in-out;
-      box-shadow: 0 0 3px rgba(254, 240, 138, 0.7), 
+      box-shadow: 0 0 3px #edb611, 
                   0 0 6px rgba(254, 240, 138, 0.5), 
                   0 0 12px rgba(254, 240, 138, 0.3);
     }
@@ -65,9 +65,13 @@ body {
 
 @layer utilities {
   .text-shadow-yellow {
-    text-shadow: 0 0 4px #eda62b,0 0 3px #ffc869;
+    text-shadow: 0 0 4px #edb611,0 0 3px #edb611;
   }
   .text-shadow-gray {
     text-shadow: 0 3px 4px #9b8b71;
   }
+}
+
+.react-time-picker {
+  direction: ltr;
 }

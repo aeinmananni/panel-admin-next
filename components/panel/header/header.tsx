@@ -59,13 +59,13 @@ export default function Header() {
         </div>
       </div>
       <div className="flex items-center gap-4 text-gray-600 relative mt-4 md:mt-0">
-        <DarkMode />
-
+        {/* <DarkMode /> */}
+{/* 
         <NotificationIcon
           Icon={Icons.ShoppingCart}
           count={0}
           color="blue-600"
-        />
+        /> */}
         <NotificationIcon
           Icon={Icons.Mail}
           count={0}

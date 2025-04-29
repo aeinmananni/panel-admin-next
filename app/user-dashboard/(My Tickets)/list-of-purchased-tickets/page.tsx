@@ -1,7 +1,5 @@
-export default function ListOfPurchasedTickets() {
-  return (
-    <div>
-      <h1>List of purchased tickets</h1>
-    </div>
-  );
+import { ListOfPurchasedTickets } from "@/components/user-dashboard-components";
+
+export default function ListOfPurchasedTicketsPage() {
+  return <ListOfPurchasedTickets />;
 }

@@ -1,7 +1,10 @@
+"use client";
+
 import {
   TravelItemType,
   columnTravel,
 } from "@/components/user-dashboard-components/components/models";
+import { Button } from "@/custom";
 
 export default function Ticket({ ...props }: TravelItemType) {
   return (
@@ -19,6 +22,9 @@ export default function Ticket({ ...props }: TravelItemType) {
           </div>
         ))}
       </div>
+      <Button className="bg-yellow-500 absolute bottom-0 left-0 p-1 text-slate-100">
+        رزرو بلیط
+      </Button>
     </div>
   );
 }

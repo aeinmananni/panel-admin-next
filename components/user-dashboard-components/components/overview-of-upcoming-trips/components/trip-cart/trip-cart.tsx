@@ -7,7 +7,7 @@ import { TripCartProps, column } from "../../../models";
 export default function TripCart({ ...props }: TripCartProps) {
   const changeColor = getChangeColor(props.status);
   return (
-    <div className="w-full border border-slate-500  rounded-md shadow-lg shadow-yellow-500 flex  p-1 relative justify-between">
+    <div className="w-full border border-slate-500  rounded-md shadow-md flex  p-1 relative justify-between">
       <div className="flex flex-col  gap-1 h-full  relative">
         {Object.keys(column).map((col, colIndex) => (
           <div key={colIndex} className="flex items-center gap-2">

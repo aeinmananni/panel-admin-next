@@ -1,7 +1,5 @@
-export default function FormToRequestTicketCancellation() {
-  return (
-    <div>
-      <h1>form-to-request-ticket-cancellation</h1>
-    </div>
-  );
+import { FormToRequestTicketCancellation } from "@/components/user-dashboard-components";
+
+export default function FormToRequestTicketCancellationPage() {
+  return <FormToRequestTicketCancellation />;
 }

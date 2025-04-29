@@ -2,3 +2,8 @@ export * from "./overview-of-upcoming-trips";
 export * from "./active-or-pending-tickets";
 export * from "./select-rigind-destination-date";
 export * from "./view-available-trips-and-purchase-tickets";
+export * from "./list-of-purchased-tickets";
+export * from "./form-to-request-ticket-cancellation";
+export * from "./view-past-trips";
+export * from "./rate-the-driver-or-trip-experience";
+export * from "./frequently-asked-questions";

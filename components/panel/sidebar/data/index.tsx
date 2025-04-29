@@ -208,29 +208,12 @@ export const GROUPING_USER_ITEMS: GroupingType[] = [
     classificationId: 3,
     link: "/user-dashboard/list-of-purchased-tickets",
   },
-  {
-    groupingId: 6,
-    groupingName: "Ticket status",
-    classificationId: 3,
-    link: "/user-dashboard/ticket-status",
-  },
-  {
-    groupingId: 7,
-    groupingName: "Option to download",
-    classificationId: 3,
-    link: "/user-dashboard/download",
-  },
+
   {
     groupingId: 8,
     groupingName: "Form to request ticket cancellation",
     classificationId: 4,
     link: "/user-dashboard/form-to-request-ticket-cancellation",
-  },
-  {
-    groupingId: 9,
-    groupingName: "Track refund status",
-    classificationId: 4,
-    link: "/user-dashboard/track-refund-status",
   },
 
   {

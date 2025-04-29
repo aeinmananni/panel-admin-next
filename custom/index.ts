@@ -4,3 +4,4 @@ export * from "./select";
 export * from "./timepickerInput";
 export * from "./calenderInput";
 export * from "./textarea";
+export * from "./starRating";

@@ -1,7 +1,5 @@
-export default function ViewPastTrips() {
-  return (
-    <div>
-      <h1>view-past-trips</h1>
-    </div>
-  );
+import { ViewPastTrips } from "@/components/user-dashboard-components";
+
+export default function ViewPastTripsPage() {
+  return <ViewPastTrips />;
 }

@@ -8,21 +8,19 @@ import {
 } from "@/custom";
 import { CITIESE } from "../../../data";
 
-const className =
-  "border border-slate-500 rounded-md outline-none focus:ring-2 ring-offset-2 ring-yellow-500 py-1 px-2 w-full";
 export default function Form() {
   return (
     <form className="formStyle">
       <div className="grid grid-cols-2 gap-3 w-full">
-        <TimePickerInput className={`${className}`} label="ساعت حرکت" />
+        <TimePickerInput className="InputStyles" label="ساعت حرکت" />
         <CalendarInput
-          className={`${className} text-center`}
+          className={`InputStyles text-center`}
           label="تاریخ حرکت"
         />
-        <Select OPTIONS={CITIESE} className={className} label="مبدا" />
-        <Select OPTIONS={CITIESE} className={className} label="مقصد" />
+        <Select OPTIONS={CITIESE} className="InputStyles" label="مبدا" />
+        <Select OPTIONS={CITIESE} className="InputStyles" label="مقصد" />
         <Textarea
-          className={`${className}`}
+          className="InputStyles"
           rows={5}
           label="توضیحات"
           styles={{ parentClassName: "col-span-2 " }}

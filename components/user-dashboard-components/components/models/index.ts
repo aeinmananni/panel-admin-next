@@ -44,3 +44,53 @@ export const columnTravel: Record<keyof Omit<TravelItemType, "id">, string> = {
   price:"قیمت",
   duration:"مدت زمان سفر",
 };
+
+
+export type PurchasedTicketsType = Pick<
+  TripCartProps,
+  "id" | "departureDate" | "departureTime" | "origin" | "destination"
+> & {
+  price: string;
+};
+
+export const columnPurchased: Record<
+  keyof Omit<PurchasedTicketsType, "id">,
+  string
+> = {
+  origin: "مبدا",
+  destination: "مقصد",
+  departureDate: "تاریخ",
+  departureTime: "ساعت",
+  price: "قیمت",
+};
+
+export type ViewPasteTravelType = Omit<
+  UpcomingTripType,
+  "seatCount" | "status"
+> &
+  Pick<TravelItemType, "duration"> & {
+    status: string;
+  };
+
+export const columnViewPased: Record<
+  keyof Omit<ViewPasteTravelType, "id">,
+  string
+> = {
+  origin: "مبدا",
+  destination: "مقصد",
+  departureDate: "تاریخ",
+  departureTime: "ساعت",
+  ticketNumber: "شماره بلیط",
+  status: "وضعیت سفر",
+  duration: "مدت زمان سفر",
+};
+
+export type RateTypes = Pick<
+  ViewPasteTravelType,
+  "id" | "departureTime" | "departureDate" | "origin" | "destination"
+>;
+
+export type FaqType = {
+  question: string;
+  answer: string;
+};

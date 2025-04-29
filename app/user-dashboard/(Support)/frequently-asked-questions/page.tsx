@@ -1,7 +1,5 @@
-export default function FrequentlyAskedQuestions() {
-  return (
-    <div>
-      <h1>frequently-asked-questions</h1>
-    </div>
-  );
+import { FrequentlyAskedQuestions } from "@/components/user-dashboard-components";
+
+export default function FrequentlyAskedQuestionsPage() {
+  return <FrequentlyAskedQuestions />;
 }

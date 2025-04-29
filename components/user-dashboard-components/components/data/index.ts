@@ -1,5 +1,12 @@
 import { SelectOptionsType } from "@/custom/models";
-import { TravelItemType, UpcomingTripType } from "../models";
+import {
+  FaqType,
+  PurchasedTicketsType,
+  RateTypes,
+  TravelItemType,
+  UpcomingTripType,
+  ViewPasteTravelType,
+} from "../models";
 
 export const UPCOMING_TRIPS: UpcomingTripType[] = [
   {
@@ -340,5 +347,229 @@ export const TRAVEL_ITEMS: TravelItemType[] = [
     price: 210000,
     duration: "11 ساعت",
     availableSeats: 4,
+  },
+];
+
+export const PURASED_TICKETS: PurchasedTicketsType[] = [
+  {
+    origin: "تهران",
+    destination: "اصفهان",
+    departureDate: "۱۴۰۴/۰۲/۱۲",
+    departureTime: "۰۸:۰۰",
+    price: "۵۰۰,۰۰۰ تومان",
+  },
+  {
+    origin: "شیراز",
+    destination: "مشهد",
+    departureDate: "۱۴۰۴/۰۲/۱۵",
+    departureTime: "۲۲:۳۰",
+    price: "۸۵۰,۰۰۰ تومان",
+  },
+  {
+    origin: "تبریز",
+    destination: "تهران",
+    departureDate: "۱۴۰۴/۰۲/۱۸",
+    departureTime: "۰۶:۱۵",
+    price: "۶۰۰,۰۰۰ تومان",
+  },
+  {
+    origin: "رشت",
+    destination: "قم",
+    departureDate: "۱۴۰۴/۰۲/۲۵",
+    departureTime: "۱۴:۴۵",
+    price: "۴۵۰,۰۰۰ تومان",
+  },
+  {
+    origin: "اهواز",
+    destination: "یزد",
+    departureDate: "۱۴۰۴/۰۳/۰۲",
+    departureTime: "۱۹:۰۰",
+    price: "۷۵۰,۰۰۰ تومان",
+  },
+];
+
+export const VIEW_PAST_TRAVELS: ViewPasteTravelType[] = [
+  {
+    id: 1,
+    origin: "تهران",
+    destination: "مشهد",
+    departureDate: "۱۴۰۳/۱۲/۲۵",
+    departureTime: "۰۸:۳۰",
+    ticketNumber: "A123456",
+    status: "انجام شده",
+    duration: "۹ ساعت",
+  },
+  {
+    id: 2,
+    origin: "شیراز",
+    destination: "اصفهان",
+    departureDate: "۱۴۰۳/۱۲/۲۰",
+    departureTime: "۱۴:۱۵",
+    ticketNumber: "B234567",
+    status: "انجام شده",
+    duration: "۵ ساعت",
+  },
+  {
+    id: 3,
+    origin: "تبریز",
+    destination: "رشت",
+    departureDate: "۱۴۰۳/۱۱/۲۸",
+    departureTime: "۰۶:۰۰",
+    ticketNumber: "C345678",
+    status: "لغو شده",
+    duration: "۷ ساعت",
+  },
+  {
+    id: 4,
+    origin: "اهواز",
+    destination: "یزد",
+    departureDate: "۱۴۰۳/۱۱/۱۵",
+    departureTime: "۲۳:۰۰",
+    ticketNumber: "D456789",
+    status: "انجام شده",
+    duration: "۶.۵ ساعت",
+  },
+  {
+    id: 5,
+    origin: "قم",
+    destination: "کرمان",
+    departureDate: "۱۴۰۳/۱۰/۳۰",
+    departureTime: "۱۹:۴۵",
+    ticketNumber: "E567890",
+    status: "انجام شده",
+    duration: "۸ ساعت",
+  },
+  {
+    id: 6,
+    origin: "بندرعباس",
+    destination: "تهران",
+    departureDate: "۱۴۰۳/۱۰/۱۵",
+    departureTime: "۰۵:۴۵",
+    ticketNumber: "F678901",
+    status: "لغو شده",
+    duration: "۱۲ ساعت",
+  },
+  {
+    id: 7,
+    origin: "کرمانشاه",
+    destination: "زنجان",
+    departureDate: "۱۴۰۳/۰۹/۲۵",
+    departureTime: "۱۳:۰۰",
+    ticketNumber: "G789012",
+    status: "انجام شده",
+    duration: "۶ ساعت",
+  },
+  {
+    id: 8,
+    origin: "قزوین",
+    destination: "گرگان",
+    departureDate: "۱۴۰۳/۰۹/۰۵",
+    departureTime: "۰۷:۳۰",
+    ticketNumber: "H890123",
+    status: "انجام شده",
+    duration: "۷ ساعت",
+  },
+  {
+    id: 9,
+    origin: "ارومیه",
+    destination: "بوشهر",
+    departureDate: "۱۴۰۳/۰۸/۲۰",
+    departureTime: "۲۱:۰۰",
+    ticketNumber: "I901234",
+    status: "انجام شده",
+    duration: "۱۳ ساعت",
+  },
+  {
+    id: 10,
+    origin: "ساری",
+    destination: "سنندج",
+    departureDate: "۱۴۰۳/۰۸/۰۵",
+    departureTime: "۱۰:۱۵",
+    ticketNumber: "J012345",
+    status: "لغو شده",
+    duration: "۱۰ ساعت",
+  },
+];
+
+export const RATE_DATA: RateTypes[] = [
+  {
+    id: 1,
+    origin: "تهران",
+    destination: "اصفهان",
+    departureDate: "۱۴۰۴/۰۲/۱۲",
+    departureTime: "۰۸:۰۰",
+  },
+  {
+    id: 2,
+    origin: "شیراز",
+    destination: "مشهد",
+    departureDate: "۱۴۰۴/۰۲/۱۵",
+    departureTime: "۲۲:۳۰",
+  },
+  {
+    id: 3,
+    origin: "تبریز",
+    destination: "تهران",
+    departureDate: "۱۴۰۴/۰۲/۲۰",
+    departureTime: "۰۶:۱۵",
+  },
+  {
+    id: 4,
+    origin: "رشت",
+    destination: "قم",
+    departureDate: "۱۴۰۴/۰۳/۰۵",
+    departureTime: "۱۴:۴۵",
+  },
+  {
+    id: 5,
+    origin: "اهواز",
+    destination: "یزد",
+    departureDate: "۱۴۰۴/۰۳/۱۰",
+    departureTime: "۱۹:۰۰",
+  },
+  {
+    id: 6,
+    origin: "کرمان",
+    destination: "بندرعباس",
+    departureDate: "۱۴۰۴/۰۳/۱۵",
+    departureTime: "۰۵:۳۰",
+  },
+];
+
+export const FAQ_DATA: FaqType[] = [
+  {
+    question: "چگونه می‌توانم بلیط سفر را رزرو کنم؟",
+    answer:
+      "شما می‌توانید با انتخاب مبدا، مقصد و تاریخ حرکت، بلیط مورد نظر خود را جستجو و رزرو نمایید.",
+  },
+  {
+    question: "آیا امکان لغو بلیط رزرو شده وجود دارد؟",
+    answer:
+      "بله، شما می‌توانید از طریق پنل کاربری درخواست لغو بلیط خود را ثبت نمایید. توجه داشته باشید که بسته به شرایط، هزینه کنسلی ممکن است اعمال شود.",
+  },
+  {
+    question: "چگونه بلیط رزرو شده را دریافت کنم؟",
+    answer:
+      "پس از تکمیل رزرو، بلیط به صورت فایل دیجیتال در اختیار شما قرار می‌گیرد و همچنین به ایمیل شما ارسال می‌شود.",
+  },
+  {
+    question: "در صورت تأخیر یا لغو سفر، چه اقدامی باید انجام دهم؟",
+    answer:
+      "در این صورت می‌توانید با پشتیبانی تماس بگیرید یا از طریق پنل کاربری وضعیت بلیط خود را بررسی و اقدام لازم را انجام دهید.",
+  },
+  {
+    question: "آیا می‌توانم اطلاعات بلیط رزرو شده را ویرایش کنم؟",
+    answer:
+      "متأسفانه پس از نهایی شدن رزرو، امکان ویرایش اطلاعات وجود ندارد. لطفاً قبل از پرداخت، اطلاعات را با دقت بررسی نمایید.",
+  },
+  {
+    question: "آیا برای کودکان یا نوزادان نیاز به خرید بلیط جداگانه است؟",
+    answer:
+      "بله، بسته به قوانین شرکت حمل‌ونقل ممکن است نیاز به خرید بلیط برای کودکان نیز باشد. لطفاً قبل از خرید، شرایط را مطالعه کنید.",
+  },
+  {
+    question: "چگونه می‌توانم با پشتیبانی تماس بگیرم؟",
+    answer:
+      "شما می‌توانید از طریق چت آنلاین، تماس تلفنی یا ایمیل با تیم پشتیبانی در ارتباط باشید. اطلاعات تماس در بخش «ارتباط با ما» قرار دارد.",
   },
 ];

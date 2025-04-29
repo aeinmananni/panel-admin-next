@@ -1,7 +1,5 @@
-export default function viewAvailableTripsAndPurchaseTickets() {
-  return (
-    <div>
-      <h1>viewAvailableTripsAndPurchaseTickets</h1>
-    </div>
-  );
+import { ViewAvailableTripsAndPurchaseTickets } from "@/components/user-dashboard-components";
+
+export default function ViewAvailableTripsAndPurchaseTicketsPage() {
+  return <ViewAvailableTripsAndPurchaseTickets />;
 }

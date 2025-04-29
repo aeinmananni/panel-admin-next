@@ -14,7 +14,7 @@ export default function Select({
   ...props
 }: SelectProps) {
   return (
-    <div className="w-full flex flex-col gap-1 relative p-1">
+    <div className="w-full h-max flex flex-col gap-1 relative p-1">
       <label
         className={`${
           errors ? "text-red-500" : "text-slate-400"

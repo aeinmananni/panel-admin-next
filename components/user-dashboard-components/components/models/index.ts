@@ -29,3 +29,18 @@ export const column: Record<keyof Omit<TripCartProps, "id">, string> = {
   ticketNumber: "شماره تیکت",
   seatCount: "تعداد صندلی",
 };
+
+
+export type TravelItemType = Pick<UpcomingTripType,"id"|"origin"|"destination"> &{
+  price: number;             
+  duration: string;          
+  availableSeats: number;   
+}
+
+export const columnTravel: Record<keyof Omit<TravelItemType, "id">, string> = {
+  origin: "مبدا",
+  destination: "مقصد",
+  availableSeats:"تعداد",
+  price:"قیمت",
+  duration:"مدت زمان سفر",
+};

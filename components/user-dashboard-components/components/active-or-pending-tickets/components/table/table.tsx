@@ -7,9 +7,9 @@ export default function Table() {
     return rowIndex % 2 === 0 ? true : false;
   };
   return (
-    <div className="w-full h-full overflow-y-auto flex justify-center  rounded-lg p-2">
-      <div className="rounded-lg overflow-hidden border-2 border-yellow-500 shadow-2xl w-full h-full">
-        <table className=" w-full h-full">
+    <div className="w-full h-full overflow-hidden flex justify-center  rounded-lg p-2 ">
+      <div className="rounded-lg overflow-y-auto border-2 border-yellow-500 shadow-2xl w-full h-full">
+        <table className=" w-full h-full overflow-hidden">
           <thead>
             <tr className="text-slate-600">
               <th className="p-2 border-yellow-500">{"ردیف"}</th>

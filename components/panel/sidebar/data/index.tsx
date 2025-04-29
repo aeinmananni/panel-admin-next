@@ -17,9 +17,8 @@ export const CLASSIFICATION_USER_ITEMS: ClassificationType[] = [
   { classificationId: 2, classificationName: "Search and Buy Tickets" },
   { classificationId: 3, classificationName: "My Tickets" },
   { classificationId: 4, classificationName: "Refund Request" },
-  { classificationId: 5, classificationName: "User Profile" },
-  { classificationId: 6, classificationName: "Trip History" },
-  { classificationId: 7, classificationName: "Support" },
+  { classificationId: 5, classificationName: "Trip History" },
+  { classificationId: 6, classificationName: "Support" },
 ].map((it) => ({ ...it, icon: ICON_USERS[it.classificationId] }));
 
 export const GROUPING_ADMIN_ITEMS: GroupingType[] = [
@@ -196,12 +195,7 @@ export const GROUPING_USER_ITEMS: GroupingType[] = [
     classificationId: 2,
     link: "/user-dashboard/select-rigind-destination-date",
   },
-  {
-    groupingId: 3,
-    groupingName: "Filter",
-    classificationId: 2,
-    link: "/user-dashboard/filter",
-  },
+
   {
     groupingId: 4,
     groupingName: "View available trips and purchase tickets",
@@ -233,52 +227,34 @@ export const GROUPING_USER_ITEMS: GroupingType[] = [
     link: "/user-dashboard/form-to-request-ticket-cancellation",
   },
   {
-    groupingId: 8,
+    groupingId: 9,
     groupingName: "Track refund status",
     classificationId: 4,
     link: "/user-dashboard/track-refund-status",
   },
 
   {
-    groupingId: 9,
-    groupingName: "Personal information",
-    classificationId: 5,
-    link: "/user-dashboard/personal-information",
-  },
-  {
     groupingId: 10,
-    groupingName: "Change password",
-    classificationId: 5,
-    link: "/user-dashboard/change-password",
-  },
-  {
-    groupingId: 11,
-    groupingName: "Manage payment methods",
-    classificationId: 5,
-    link: "/user-dashboard/Change password",
-  },
-  {
-    groupingId: 12,
     groupingName: "View past trips",
-    classificationId: 6,
+    classificationId: 5,
     link: "/user-dashboard/view-past-trips",
   },
   {
-    groupingId: 13,
+    groupingId: 11,
     groupingName: "Rate the driver or trip experience",
-    classificationId: 6,
+    classificationId: 5,
     link: "/user-dashboard/rate-the-driver-or-trip-experience",
   },
   {
-    groupingId: 14,
+    groupingId: 12,
     groupingName: "Chat or support ticket system",
-    classificationId: 7,
+    classificationId: 6,
     link: "/user-dashboard/chat-or-support-ticket-system",
   },
   {
-    groupingId: 15,
+    groupingId: 13,
     groupingName: "Frequently Asked Questions",
-    classificationId: 7,
+    classificationId: 6,
     link: "/user-dashboard/frequently-asked-questions",
   },
 ];

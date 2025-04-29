@@ -72,6 +72,47 @@ body {
   }
 }
 
+.linkedButton {
+  @apply bg-gradient-to-tr from-yellow-500 to-slate-500 shadow-md active:scale-90 duration-300 p-1 rounded-md text-white
+}
+
+.formStyle {
+  @apply flex flex-col gap-2 w-full  h-full border border-yellow-500 rounded-lg p-2
+}
+
 .react-time-picker {
   direction: ltr;
+}
+
+.ticketBorder{
+    clip-path: polygon(
+      10px 0%, 100% 0%, 100% calc(100% - 10px), 
+      calc(100% - 10px) 100%, 0% 100%, 0% 10px
+    );
+ 
+}
+
+.ticketBorder {
+  position: relative;
+  background: white;
+}
+
+.ticketBorder::before,
+.ticketBorder::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid rgb(60, 53, 53);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ticketBorder::before {
+  left: -10px;
+}
+.ticketBorder::after {
+  right: -10px;
 }

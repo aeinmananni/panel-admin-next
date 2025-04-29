@@ -20,10 +20,7 @@ export default function Empty({ title, href, textLink }: EmptyType) {
       <span className="text-lg font-bold text-slate-500 text-shadow-yellow">
         {title}
       </span>
-      <Link
-        className="bg-gradient-to-tr from-yellow-500 to-slate-500 shadow-md active:scale-90 duration-300 p-1 rounded-md text-white"
-        href={href}
-      >
+      <Link className="linkedButton" href={href}>
         {textLink}
       </Link>
     </div>

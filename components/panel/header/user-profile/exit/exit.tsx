@@ -4,7 +4,7 @@ import { RiLogoutCircleRLine } from 'react-icons/ri';
 export default function Exit() {
       return (
     <div className="flex justify-between cursor-pointer">
-      <a href="#" className="block px-4 py-2 text-sm text-gray-700">
+      <a href="/login" className="block px-4 py-2 text-sm text-gray-700">
         خروج
       </a>
       <RiLogoutCircleRLine className="mx-2 mt-2 cursor-pointer" />

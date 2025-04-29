@@ -13,7 +13,7 @@ export default function FrequentlyAskedQuestions() {
         {FAQ_DATA.map((it, index) => (
           <div
             key={index}
-            className="flex flex-col gap-5 border p-2 justify-evenly relative"
+            className="flex flex-col gap-5 border border-yellow-500 p-2 justify-evenly relative"
           >
             <Image
               src={questionsIcon}

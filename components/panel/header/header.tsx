@@ -7,7 +7,6 @@ import { NotificationIconProps } from "./model";
 import avatar from "@/public/images/user.jpg";
 import DatePickerComponent from "./calender/calender";
 import ChangeLanguage from "@/components/language/Languages";
-import DarkMode from "@/components/darkmode";
 
 interface CustomNotificationIconProps extends NotificationIconProps {
   message?: string;
@@ -59,13 +58,6 @@ export default function Header() {
         </div>
       </div>
       <div className="flex items-center gap-4 text-gray-600 relative mt-4 md:mt-0">
-        {/* <DarkMode /> */}
-{/* 
-        <NotificationIcon
-          Icon={Icons.ShoppingCart}
-          count={0}
-          color="blue-600"
-        /> */}
         <NotificationIcon
           Icon={Icons.Mail}
           count={0}

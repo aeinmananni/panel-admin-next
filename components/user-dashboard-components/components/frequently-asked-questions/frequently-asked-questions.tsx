@@ -9,7 +9,7 @@ export default function FrequentlyAskedQuestions() {
     <div className="flex flex-col h-full w-full">
       <Header image={info.src} title={"سوالات متداول"} />
 
-      <div className="grid grid-cols-2 w-full h-full">
+      <div className="grid grid-cols-2 w-full h-full overflow-y-auto">
         {FAQ_DATA.map((it, index) => (
           <div
             key={index}

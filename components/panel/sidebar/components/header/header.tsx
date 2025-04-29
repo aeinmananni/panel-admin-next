@@ -1,8 +1,9 @@
 "use client";
 import { usePanelAdminStore } from "@/store";
-import { BookOpenCheck, Menu } from "../../icons/icon";
+import { Menu } from "../../icons/icon";
 import { useDelayedShowMenu } from "@/hooks/delayedShowMenu";
-
+import Image from "next/image";
+import taxiBoard from "@/public/icons/taxi-board.png";
 export default function Header() {
   const currentColor = usePanelAdminStore((s) => s.currentColor);
   const isScroll = usePanelAdminStore((s) => s.isScroll);
@@ -31,9 +32,9 @@ export default function Header() {
         }  items-center gap-2`}
       >
         <span style={{ color: currentColor }} className="text-lg font-semibold">
-          PAdmin
+          سماسیر
         </span>
-        <BookOpenCheck size={36} color={currentColor} />
+        <Image src={taxiBoard} alt="#" width={50} height={50} />
       </div>
     </div>
   );

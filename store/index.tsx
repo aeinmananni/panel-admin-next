@@ -19,8 +19,8 @@ type StoreType = {
 export const usePanelAdminStore = create<StoreType>()((set) => ({
   currentColor:
     typeof window !== "undefined"
-      ? localStorage.getItem("currentColor") || "#7367f0"
-      : "#7367f0",
+      ? localStorage.getItem("currentColor") || "#edb611"
+      : "#edb611",
   isScroll: false,
   showMenu: true,
   account: {

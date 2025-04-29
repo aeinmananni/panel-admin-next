@@ -7,9 +7,9 @@ export const CLASSIFICATION_ADMIN_ITEMS: ClassificationType[] = [
   { classificationId: 3, classificationName: "Driver Management" },
   { classificationId: 4, classificationName: "Ticket Management" },
   { classificationId: 5, classificationName: "User Management" },
-  { classificationId: 6, classificationName: "Reports and Statistics" },
-  { classificationId: 7, classificationName: "System Settings" },
-  { classificationId: 8, classificationName: "Access & Roles" },
+  // { classificationId: 6, classificationName: "Reports and Statistics" },
+  // { classificationId: 7, classificationName: "System Settings" },
+  // { classificationId: 8, classificationName: "Access & Roles" },
 ].map((it) => ({ ...it, icon: ICON_ADMINS[it.classificationId] }));
 
 export const CLASSIFICATION_USER_ITEMS: ClassificationType[] = [
@@ -100,19 +100,7 @@ export const GROUPING_ADMIN_ITEMS: GroupingType[] = [
     classificationId: 5,
     link: "/dashboard/ViewUserList",
   },
-  {
-    groupingId: 14,
-    groupingName: "ReviewTicketReservation",
-    classificationId: 5,
-    link: "/dashboard/Review-Ticket-Reservation",
-  },
 
-  {
-    groupingId: 15,
-    groupingName: "BlockUser",
-    classificationId: 5,
-    link: "/dashboard/Block-User",
-  },
   {
     groupingId: 16,
     groupingName: "Purchased Tickets",
@@ -124,12 +112,6 @@ export const GROUPING_ADMIN_ITEMS: GroupingType[] = [
     groupingName: "TicketStatus",
     classificationId: 4,
     link: "/dashboard/Ticket-Status",
-  },
-  {
-    groupingId: 18,
-    groupingName: "TicketRefund",
-    classificationId: 4,
-    link: "/dashboard/Ticket-Refund",
   },
   {
     groupingId: 19,

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const TicketsTable = () => {
-  const allTickets = Array.from({ length: 38 }).map((_, i) => ({
+  const allTickets = Array.from({ length: 6 }).map((_, i) => ({
     id: i + 1,
     passenger: `مسافر ${i + 1}`,
     origin: "تهران",

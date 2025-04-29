@@ -17,7 +17,7 @@ export default function Dashbaord({ children }: DashbaordProps) {
         <div className="w-full h-full  p-3 overflow-hidden">
           <div
             style={{ direction: i18n.language === "en" ? "ltr" : "rtl" }}
-            className="w-full h-full border-2 border-yellow-500 rounded-lg shadow-lg flex flex-col"
+            className="w-full h-full border-2 border-yellow-500 rounded-lg shadow-lg flex flex-col overflow-y-auto"
           >
             {children}
           </div>

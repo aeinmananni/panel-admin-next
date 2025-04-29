@@ -41,7 +41,6 @@
   "Overview of upcoming trips": "نظرة عامة على الرحلات القادمة",
   "Active or pending tickets": "التذاكر النشطة أو المعلقة",
   "Select Origind,destination,date": "اختر نقطة الانطلاق، الوجهة، والتاريخ",
-  "Filter": "فلتر",
   "View available trips and purchase tickets": "عرض الرحلات المتاحة وشراء التذاكر",
   "List of purchased tickets": "قائمة التذاكر المشتراة",
   "Ticket status": "حالة التذكرة",
@@ -55,5 +54,6 @@
   "Chat or support ticket system": "نظام الدردشة أو تذاكر الدعم",
   "Frequently Asked Questions": "الأسئلة الشائعة",
   "Change password": "تغيير كلمة المرور",
-  "subtext":"هنا يمكنك مشاهدة رحلاتك القادمة."
+  "subtext": "هنا يمكنك مشاهدة رحلاتك القادمة.",
+  "ActiveOrPendingTicketsSubText": "في هذا القسم يمكنك مشاهدة التذاكر التي تم شراؤها أو التي قيد الانتظار."
 }

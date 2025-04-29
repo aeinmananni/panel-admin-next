@@ -35,7 +35,7 @@
       border-radius: 4px;
       text-align: center;
       transition: all 0.3s ease-in-out;
-      box-shadow: 0 0 3px rgba(254, 240, 138, 0.7), 
+      box-shadow: 0 0 3px #edb611, 
                   0 0 6px rgba(254, 240, 138, 0.5), 
                   0 0 12px rgba(254, 240, 138, 0.3);
     }
@@ -65,9 +65,54 @@ body {
 
 @layer utilities {
   .text-shadow-yellow {
-    text-shadow: 0 0 4px #eda62b,0 0 3px #ffc869;
+    text-shadow: 0 0 4px #edb611,0 0 3px #edb611;
   }
   .text-shadow-gray {
     text-shadow: 0 3px 4px #9b8b71;
   }
+}
+
+.linkedButton {
+  @apply bg-gradient-to-tr from-yellow-500 to-slate-500 shadow-md active:scale-90 duration-300 p-1 rounded-md text-white
+}
+
+.formStyle {
+  @apply flex flex-col gap-2 w-full  h-full border border-yellow-500 rounded-lg p-2
+}
+
+.react-time-picker {
+  direction: ltr;
+}
+
+.ticketBorder{
+    clip-path: polygon(
+      10px 0%, 100% 0%, 100% calc(100% - 10px), 
+      calc(100% - 10px) 100%, 0% 100%, 0% 10px
+    );
+ 
+}
+
+.ticketBorder {
+  position: relative;
+  background: white;
+}
+
+.ticketBorder::before,
+.ticketBorder::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid rgb(60, 53, 53);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ticketBorder::before {
+  left: -10px;
+}
+.ticketBorder::after {
+  right: -10px;
 }

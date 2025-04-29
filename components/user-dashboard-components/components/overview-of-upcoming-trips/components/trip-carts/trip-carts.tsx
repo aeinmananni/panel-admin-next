@@ -1,5 +1,5 @@
 import TripCart from "../trip-cart/trip-cart";
-import { UPCOMING_TRIPS } from "../../data";
+import { UPCOMING_TRIPS } from "../../../data";
 import { Empty } from "../../../empty";
 
 export default function TripCarts() {

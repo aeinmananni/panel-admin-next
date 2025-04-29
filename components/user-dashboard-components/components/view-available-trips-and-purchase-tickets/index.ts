@@ -1,0 +1,1 @@
+export {default as ViewAvailableTripsAndPurchaseTickets} from "./view-available-trips-and-purchase-tickets";

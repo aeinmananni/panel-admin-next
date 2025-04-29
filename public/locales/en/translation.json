@@ -41,7 +41,6 @@
   "Overview of upcoming trips": "Overview of upcoming trips",
   "Active or pending tickets": "Active or pending tickets",
   "Select Origind,destination,date": "Select Origind,destination,date",
-  "Filter": "Filter",
   "View available trips and purchase tickets": "View available trips and purchase tickets",
   "List of purchased tickets": "List of purchased tickets",
   "Ticket status": "Ticket status",
@@ -55,5 +54,6 @@
   "Rate the driver or trip experience": "Rate the driver or trip experience",
   "Chat or support ticket system": "Chat or support ticket system",
   "Frequently Asked Questions": "Frequently Asked Questions",
-  "subtext":"Here you can view your upcoming trips."
+  "subtext": "Here you can view your upcoming trips.",
+  "ActiveOrPendingTicketsSubText": "In this section, you can view the tickets that have been purchased or are pending."
 }

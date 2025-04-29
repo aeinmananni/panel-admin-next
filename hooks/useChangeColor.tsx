@@ -1,4 +1,4 @@
-export const useChangeColor = (
+export const getChangeColor = (
   text: "تایید شده" | "در انتظار تایید" | "لغو شده"
 ) => {
   switch (text) {

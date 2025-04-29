@@ -11,7 +11,7 @@ export default function Rate({
   origin,
 }: RateProps) {
   return (
-    <div className=" border flex flex-col gap-2 relative">
+    <div className=" border border-dashed p-1 rounded-lg flex flex-col gap-2 relative">
       <Image
         src={ratingForm}
         alt="rating"

@@ -52,7 +52,7 @@ const UserProfile: React.FC<UserProfileProps> = ({ role, avatar, name }) => {
       {isMenuOpen && (
         <div
           ref={menuRef}
-          className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10"
+          className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10"
         >
           <Profile />
 

@@ -25,7 +25,7 @@ export default function EditProfile () {
   return (
     <>
       <div
-        className="flex justify-between cursor-pointer"
+        className="flex justify-between hover:bg-gray-100 cursor-pointer"
         onClick={toggleModal}
       >
         <a className="block px-4 py-2 text-sm text-gray-700 cursor-pointer">

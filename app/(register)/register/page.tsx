@@ -1,6 +1,6 @@
 
 
-import RegisterForm from './RegisterForm';
+import RegisterForm from "@/components/panel/auth/register/RegisterForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

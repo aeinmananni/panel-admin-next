@@ -3,6 +3,7 @@ import { BiSolidEdit } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
+import { Input } from "@/custom";
 
 const validationSchema = Yup.object({
   firstName: Yup.string().required("نام الزامی است"),
@@ -34,7 +35,6 @@ export default function EditProfile () {
         <BiSolidEdit className="mx-2 mt-2 cursor-pointer" />
       </div>
 
-      {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div
@@ -65,17 +65,15 @@ export default function EditProfile () {
               {({ errors, touched, setFieldValue }) => (
                 <Form className="space-y-4">
                   <div>
-                    <label
-                      htmlFor="firstName"
-                      className="block text-sm text-gray-700"
-                    >
-                      نام
-                    </label>
-                    <Field
+                    <Input
                       type="text"
                       id="firstName"
                       name="firstName"
+                      label="نام"
                       className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"
+                                     styles={{
+            labelClassName: "block text-sm text-gray-700",
+          }}
                     />
                     {errors.firstName && touched.firstName && (
                       <div className="text-red-500 text-xs mt-1">
@@ -85,17 +83,15 @@ export default function EditProfile () {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="lastName"
-                      className="block text-sm text-gray-700"
-                    >
-                      نام خانوادگی
-                    </label>
-                    <Field
+                    <Input
                       type="text"
                       id="lastName"
+                      label="نام خانوادگی"
                       name="lastName"
                       className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"
+                      styles={{
+            labelClassName: "block text-sm text-gray-700",
+          }}
                     />
                     {errors.lastName && touched.lastName && (
                       <div className="text-red-500 text-xs mt-1">
@@ -105,17 +101,15 @@ export default function EditProfile () {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm text-gray-700"
-                    >
-                      شماره تماس
-                    </label>
-                    <Field
+                    <Input
                       type="text"
                       id="phone"
+                      label="شماره تماس"
                       name="phone"
                       className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"
+                      styles={{
+                        labelClassName: "block text-sm text-gray-700",
+                      }}
                     />
                     {errors.phone && touched.phone && (
                       <div className="text-red-500 text-xs mt-1">
@@ -125,17 +119,16 @@ export default function EditProfile () {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="address"
-                      className="block text-sm text-gray-700"
-                    >
-                      آدرس
-                    </label>
-                    <Field
+                    <Input
+                    label="آدرس"
                       type="text"
                       id="address"
                       name="address"
                       className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"
+                      styles={{
+                        labelClassName: "block text-sm text-gray-700",
+                      }}
+                    
                     />
                     {errors.address && touched.address && (
                       <div className="text-red-500 text-xs mt-1">
@@ -145,24 +138,11 @@ export default function EditProfile () {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="profileImage"
-                      className="block text-sm text-gray-700"
-                    >
-                      تغییر عکس پروفایل
-                    </label>
-                    <input
-                      type="file"
-                      id="profileImage"
-                      name="profileImage"
-                      onChange={(event) => {
-                        setFieldValue(
-                          "profileImage",
-                          event.currentTarget.files[0]
-                        );
-                      }}
-                      className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md"
-                    />
+                          <Input
+                              type="file"
+                              label="تغییر عکس پروفایل"
+                              />
+   
                     {errors.profileImage && touched.profileImage && (
                       <div className="text-red-500 text-xs mt-1">
                         {errors.profileImage}

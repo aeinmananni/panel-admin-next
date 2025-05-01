@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { FaUser } from 'react-icons/fa';
 
-const USERS_API_URL = "https://jsonplaceholder.typicode.com/users"; // یک API نمونه
+const USERS_API_URL = "https://jsonplaceholder.typicode.com/users"; 
 
 const UserCard = ({ user }) => {
   return (

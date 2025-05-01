@@ -1,0 +1,1 @@
+export { default as TripReport } from './Trip-status';

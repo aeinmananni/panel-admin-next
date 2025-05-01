@@ -1,0 +1,1 @@
+export { default as TripTabs } from './create-edit-trip';

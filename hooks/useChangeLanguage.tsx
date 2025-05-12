@@ -16,10 +16,10 @@ export const useChangeLanguage = () => {
   };
 
   useEffect(() => {
-    let currentLang = i18n.language || "fa"; // مقدار پیش‌فرض "fa"
+    let currentLang = i18n.language || "fa";
 
     if (!["en", "fa", "ar"].includes(currentLang)) {
-      currentLang = "fa"; // اگر مقدار نامعتبر بود، "fa" تنظیم شود
+      currentLang = "fa";
       i18n.changeLanguage(currentLang);
     }
 
